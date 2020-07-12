@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
-import { Nav } from 'react-bootstrap';
-import './home.css';
+import './Navbar.css';
 
-class Home extends Component {
+class Navbar extends Component {
+    handleLogout = e => {
+        localStorage.removeItem('token')
+        window.location.reload()
+    }
     render() {
         const sections = ['Home', 'About', 'Contact'];
         const navLinks = sections.map( section => {
@@ -14,13 +17,14 @@ class Home extends Component {
             <nav>
                 <h2>React Project</h2>
                 <ul>
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">About</a></li>
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/about">About</a></li>
                     <li><a href="/contact">Contact</a></li>
+                    <li><a href="/resume">Resumer</a></li>
                 </ul>
             </nav>
         );
     }
 }
 
-export default Home;
+export default Navbar;
