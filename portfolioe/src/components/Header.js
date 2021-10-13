@@ -1,6 +1,6 @@
 import React from 'react';
-import { Typography, Avatar, Grid, Box } from '@material-ui/core';
-import avatar from '../image/file/zak.png';
+import { Avatar, Grid, Box } from '@material-ui/core';
+import avatar from '../image/file/avatar.png';
 import { makeStyles } from '@material-ui/core/styles';
 import Typed from 'react-typed';
 
@@ -13,7 +13,7 @@ const useStyles = makeStyles(theme => ({
 
     },
     title: {
-        color: "tomato"
+        color: "#00B8E3"
     },
     subtitle: {
         color: "tan",
@@ -39,13 +39,12 @@ function Header() {
             <Grid container justify="center">
                 <Avatar className={classes.avatar} src={avatar} alt="Tadjidine Tamou" />
             </Grid>
-            <Typography className={classes.title} variant="h4">
+            <h3 className={classes.title}>
                 <Typed strings={["Tadjidine Tamou"]} typeSpeed={40} />
-            </Typography>
-            <br />
-            <Typography className={classes.subtitle} variant="h5">
+            </h3>
+            <h4 className={classes.subtitle}>
                 <Typed strings={["Web Developer", "Web Designer", "Front-End", "Back-End"]} typeSpeed={40} backSpeed={60} loop />
-            </Typography>
+            </h4>
         </Box>
     )
 }

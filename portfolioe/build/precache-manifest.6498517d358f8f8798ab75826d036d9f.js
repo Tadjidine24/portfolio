@@ -25,26 +25,23 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   },
   {
     "revision": "70453d0cded4b6782b889f322a913ac5",
-    "url": "/static/media/Zakariya_Raiad.70453d0c.pdf"
+    "url": "/static/media/Tadjidine_Tamou.pdf"
   },
   {
     "revision": "2dd213aa54b22c3bca0c62f570d1512a",
-    "url": "/static/media/coffee-apple.2dd213aa.jpg"
+    "url": "/static/media/fond.jpg"
   },
   {
     "revision": "4bf9f35f4c784b67536a46c8f85f9715",
-    "url": "/static/media/connect4.4bf9f35f.png"
+    "url": "/static/media/ign3d.png"
   },
   {
     "revision": "6a2274644d354ba3d27910881d159842",
-    "url": "/static/media/ecommerce.6a227464.png"
-  },
-  {
-    "revision": "2edf29c1472c728d24da8c9425d53f16",
-    "url": "/static/media/snap.2edf29c1.png"
+    "url": "/static/media/AEV-RENOV.png"
   },
   {
     "revision": "b54863b475ab366c5e671f363ad85f8d",
-    "url": "/static/media/zak.b54863b4.png"
+    "url": "/static/media/avatar.png"
+
   }
 ]);

@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import { AppBar, Toolbar, ListItem, IconButton, ListItemText, Avatar, Divider, List, Typography, Box, ListItemIcon, } from "@material-ui/core";
-import { AssignmentInd, Home, Apps, ContactMail } from "@material-ui/icons";
+import { AppBar, Toolbar, ListItem, IconButton, ListItemText, Avatar, Divider, List, Box, ListItemIcon, } from "@material-ui/core";
+import { AssignmentInd, Home, Apps } from "@material-ui/icons";
 import { makeStyles } from '@material-ui/core/styles';
 import MobileRightMenuSlider from "@material-ui/core/Drawer";
-import avatar from '../image/file/zak.png';
+import avatar from '../image/file/avatar.png';
 import {Link} from "react-router-dom";
 import Footer from './Footer';
 import DehazeIcon from '@material-ui/icons/Dehaze';
@@ -13,7 +13,7 @@ import PersonIcon from '@material-ui/icons/Person';
 const useStyles = makeStyles(theme => ({
     menuStliderContainer: {
         width: 250,
-        background: "#511",
+        background: "#222",
         height: "100%"
     },
     avatar: {
@@ -23,7 +23,7 @@ const useStyles = makeStyles(theme => ({
         height: theme.spacing(13)
     },
     listItem: {
-        color: "tan"
+        color: "#00B8E3"
     }
 }));
 
@@ -94,11 +94,11 @@ const Navbar = () => {
                 <AppBar position="static" style={{ background: "#222" }}>
                     <Toolbar>
                         <IconButton onClick={toggleSlider("right", true)}>
-                            <DehazeIcon  style={{ color: "tomato" }} />
+                            <DehazeIcon  style={{ color: "#00B8E3" }} />
                         </IconButton>
-                        <Typography variant="h5" style={{ color: "tan" }}>
+                        <h4 style={{ color: "tan" }}>
                             Portfolio
-                    </Typography>
+                    </h4>
                         <MobileRightMenuSlider anchor="right" open={state.right} onClose={toggleSlider("right", false)}>
                             {sideList("right")}
                             <Footer/>

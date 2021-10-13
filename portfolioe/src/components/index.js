@@ -34,7 +34,7 @@ const Home = () => {
                             type: "line",
                             stroke: {
                                 width: 1,
-                                 color: "tomato"
+                                 color: "tan"
                             }
                         },
                         size: {

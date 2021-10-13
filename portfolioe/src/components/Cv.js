@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Grid, IconButton } from "@material-ui/core";
 import Navbar from "./Navbar";
 import CloudDownloadIcon from '@material-ui/icons/CloudDownload';
-import pdf from './pdf/Zakariya_Raiad.pdf';
+import pdf from './pdf/Tadjidine_Tamou.pdf';
 import './style.css';
 
 const useStyles = makeStyles(theme => ({
@@ -30,7 +30,7 @@ const useStyles = makeStyles(theme => ({
 const Cv = () => {
     const classes = useStyles();
     return (
-        <Box component="div" style={{ background: "#233", height: "100vh" }}>
+        <Box component="div" style={{ height: "100vh" }}>
             <Navbar />
             <Grid container justify="center">
                 <Box component="form" className={classes.form}>

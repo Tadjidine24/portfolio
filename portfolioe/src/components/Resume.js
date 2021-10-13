@@ -1,12 +1,12 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Typography, Box } from "@material-ui/core";
+import { Box } from "@material-ui/core";
 import Navbar from "./Navbar";
 
 
 const useStyles = makeStyles(theme => ({
     mainContainer: {
-        background: "#233",
+        background: "rgba(0, 0, 0, 0.5)",
     },
     timeLine: {
         position: "relative",
@@ -50,7 +50,7 @@ const useStyles = makeStyles(theme => ({
             right: "-0.625rem",
             top: "calc(50% - 5px)",
             borderStyle: "solid",
-            borderColor: "tomato tomato transparent transparent",
+            borderColor: "#00B8E3 #00B8E3 transparent transparent",
             borderWidth: "0.625rem",
             transform: "rotate(45deg)"
         },
@@ -65,7 +65,7 @@ const useStyles = makeStyles(theme => ({
             "&:nth-of-type(2n):before": {
                 right: "auto",
                 left: "-0.625rem",
-                borderColor: "transparent transparent tomato tomato"
+                borderColor: "transparent transparent #00B8E3 #00B8E3"
             }
         },
     }, timeLineYear: {
@@ -73,7 +73,7 @@ const useStyles = makeStyles(theme => ({
         maxWidth: "9.375rem",
         margin: "0 3rem 0 auto",
         fontSize: "1.8rem",
-        background: "tomato",
+        background: "#F58E56",
         color: "white",
         lineHeight: 1,
         padding: "0.5rem 0 1rem",
@@ -93,7 +93,7 @@ const useStyles = makeStyles(theme => ({
         }
     },
     heading: {
-        color: "tomato",
+        color: "#00B8E3",
         padding: "3rem 0",
         textTransform: "uppercase"
     },
@@ -112,87 +112,101 @@ const Resume = () => {
         <>
             <Navbar />
             <Box component="header" className={classes.mainContainer}>
-                <Typography variant="h4" align="center" className={classes.heading}>
+                <h3 align="center" className={classes.heading}>
                     Diplômes et Formation
-                </Typography>
+                </h3>
                 <Box component="div" className={classes.timeLine}>
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
-                        2018
-                        </Typography>
+                <h2 className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
+                        2022
+                    </h2>
                     <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" aligh="center" className={classes.subHeading}>
-                            Niveau Bac S
-                        </Typography>
-                        <Typography variant="body1" aligh="center" style={{ color: "tomato" }}>
-                            Lycée Richelieu
-                         </Typography>
-                        <Typography variant="subtitle1" aligh="center" style={{ color: "tan" }}>
-                            Rueil-Malmaison
-                        </Typography>
+                        <h4 variant="h5" aligh="center" className={classes.subHeading}>
+                            Bac + 3 Web Design et Communication Graphique
+                        </h4>
+                        <p variant="body1" aligh="center" style={{ color: "#00B8E3" }}>
+                            ICAN Design
+                         </p>
+                        <h6 variant="subtitle1" aligh="center" style={{ color: "tan" }}>
+                        Paris 12e
+                        </h6>
                     </Box>
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
-                        2019
-                    </Typography>
-                    <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" aligh="center" className={classes.subHeading}>
-                            Niveau Bac ES
-                        </Typography>
-                        <Typography variant="body1" aligh="center" style={{ color: "tomato" }}>
-                            Lycée Richelieu
-                         </Typography>
-                        <Typography variant="subtitle1" aligh="center" style={{ color: "tan" }}>
-                            Rueil-Malmaison
-                        </Typography>
-                    </Box>
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
+                    <h2 className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
                         2021
-                    </Typography>
+                    </h2>
                     <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" aligh="center" className={classes.subHeading}>
-                            Bac + 2
-                        </Typography>
-                        <Typography variant="body1" aligh="center" style={{ color: "tomato" }}>
+                        <h4 variant="h5" aligh="center" className={classes.subHeading}>
+                            Bac + 2 Développeur Web
+                        </h4>
+                        <p variant="body1" aligh="center" style={{ color: "#00B8E3" }}>
                             Samsung Campus / Epitech
-                         </Typography>
-                        <Typography variant="subtitle1" aligh="center" style={{ color: "tan" }}>
+                         </p>
+                        <h6 variant="subtitle1" aligh="center" style={{ color: "tan" }}>
                             Saint-Ouen
-                        </Typography>
+                        </h6>
+                    </Box>
+                    <h2 className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
+                        2019
+                    </h2>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <h4 variant="h5" aligh="center" className={classes.subHeading}>
+                            Niveau Bac ES
+                        </h4>
+                        <p variant="body1" aligh="center" style={{ color: "#00B8E3" }}>
+                            Lycée Richelieu
+                         </p>
+                        <h6 variant="subtitle1" aligh="center" style={{ color: "tan" }}>
+                            Rueil-Malmaison
+                        </h6>
+                    </Box>
+                    <h2 className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
+                        2018
+                        </h2>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <h4 variant="h5" aligh="center" className={classes.subHeading}>
+                            Niveau Bac S
+                        </h4>
+                        <p variant="body1" aligh="center" style={{ color: "#00B8E3" }}>
+                            Lycée Richelieu
+                         </p>
+                        <h6 variant="subtitle1" aligh="center" style={{ color: "tan" }}>
+                            Rueil-Malmaison
+                        </h6>
                     </Box>
                 </Box>
             </Box>
 
             <Box component="header" className={classes.mainContainer}>
-                <Typography variant="h4" align="center" className={classes.heading}>
+                <h3 variant="h4" align="center" className={classes.heading}>
                     Expérience Professionnel
-                </Typography>
+                </h3>
                 <Box component="div" className={classes.timeLine}>
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
-                        2019-2020
-                    </Typography>
-                    <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" aligh="center" className={classes.subHeading}>
-                            Vendeur
-                        </Typography>
-                        <Typography variant="body1" aligh="center" style={{ color: "tomato" }}>
-                            Sushi Shop
-                         </Typography>
-                        <Typography variant="subtitle1" aligh="center" style={{ color: "tan" }}>
-                            Rueil-Malmaison
-                        </Typography>
-                    </Box>
-                    <Typography variant="h2" className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
+                <h2 className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
                         2021
-                    </Typography>
+                    </h2>
                     <Box component="div" className={classes.timeLineItem}>
-                        <Typography variant="h5" aligh="center" className={classes.subHeading}>
-                            Bac + 2
-                        </Typography>
-                        <Typography variant="body1" aligh="center" style={{ color: "tomato" }}>
-                            Samsung Campus / Epitech
-                         </Typography>
-                        <Typography variant="subtitle1" aligh="center" style={{ color: "tan" }}>
-                            Saint-Ouen
-                        </Typography>
+                        <h4 variant="h5" aligh="center" className={classes.subHeading}>
+                            Développeur / Intégrateur Web en Alternance
+                        </h4>
+                        <p variant="body1" aligh="center" style={{ color: "#00B8E3" }}>
+                            Microwebmedia
+                         </p>
+                        <h6 variant="subtitle1" aligh="center" style={{ color: "tan" }}>
+                            Clichy
+                        </h6>
+                    </Box>
+                    <h2 className={`${classes.timeLineYear} ${classes.timeLineItem} `}>
+                        Depuis 2019
+                    </h2>
+                    <Box component="div" className={classes.timeLineItem}>
+                        <h4 variant="h5" aligh="center" className={classes.subHeading}>
+                            Vendeur
+                        </h4>
+                        <p variant="body1" aligh="center" style={{ color: "#00B8E3" }}>
+                            Sushi Shop
+                         </p>
+                        <h6 variant="subtitle1" aligh="center" style={{ color: "tan" }}>
+                            Rueil-Malmaison
+                        </h6>
                     </Box>
                 </Box>
             </Box>

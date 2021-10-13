@@ -13,7 +13,7 @@ const useStyles = makeStyles({
         "& .MuiSvgIcon-root":{
             fill: "tan",
             "&:hover":{
-                fill:"tomato",
+                fill:"#00B8E3",
                 fontSize:"1.8rem"
             }
         }
@@ -26,7 +26,7 @@ const Footer = () => {
     return (
      <BottomNavigation width="auto" style={{background:"#233"}}>
          <BottomNavigationAction href="https://github.com/Tadjidine24" className={classes.root} style={{ padding: 0}} icon={<GitHub/>}/>
-         <BottomNavigationAction href="https://linkedin.https://www.linkedin.com/in/tadjidine-tamou-frontenddev/" className={classes.root} style={{ padding: 0}} icon={<LinkedIn/>}/>
+         <BottomNavigationAction href="https://www.linkedin.com/in/tadjidine-tamou-frontenddev/" className={classes.root} style={{ padding: 0}} icon={<LinkedIn/>}/>
      </BottomNavigation>
     )
 }
